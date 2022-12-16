@@ -12,6 +12,7 @@
   height: 100%;
   background: #1D2521;
   z-index: 999;
+  -webkit-transition: 1s all;
   transition: 1s all;
   opacity: 1;
   visibility: visible;
@@ -28,6 +29,7 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   animation: 1s spin infinite linear;
+  -webkit-animation: 1s spin infinite linear;
 }
 .preloader.done{
   opacity: 0;
@@ -35,12 +37,18 @@
 }
 @keyframes spin{
   form{
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
     transform: translate(-50%, -50%) rotate(0deg);
   }
   to{
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes spin{
+  form{
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to{
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
