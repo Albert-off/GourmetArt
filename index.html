@@ -38,7 +38,7 @@
     <link rel="icon" type="image/png" href="assets/img/icons/android-chrome-192x192.png" sizes="192x192">
     <meta name="msapplication-square70x70logo" content="assets/img/icons/smalltile.png" />
     <meta name="msapplication-square150x150logo" content="assets/img/icons/mediumtile.png" />
-    <!-- <meta name="msapplication-wide310x150logo" content="/widetile.png" /> -->
+    <meta name="msapplication-wide310x150logo" content="assets/img/icons/widetile.png" />
     <meta name="msapplication-square310x310logo" content="assets/img/icons/largetile.png" />
     <link rel="manifest" href="assets/img/icons/site.webmanifest">
 
@@ -56,6 +56,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
+
+    <!--========== PRELOADER ==========-->
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div>
     
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
@@ -73,7 +78,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link"><!--About-->Մեր Մասին</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link"><!--Services Սերվիս-->Սպասարկում</a></li>
                     <li class="nav__item"><a href="#menu" class="nav__link"><!--Menu-->Մենյու</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link"><!--Contact us-->Առաքում</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><!--Contact us | Հետ կապ-->Առաքում</a></li>
 
                     <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                 </ul>
@@ -106,9 +111,6 @@
                     <span class="section-subtitle about__initial"><!--About us-->Մեր Մասին</span>
                     <h2 class="section-title about__initial"><!--We cook the best <br> tasty food--><span class="about_logo">Gourmet Art</span> – թարմ, <br> տնական, համեղ 🙂</h2>
                     <p class="about__description">
-                        <!--We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.-->
-                        <!--Մենք պատրաստում ենք լավագույն սնունդը ամբողջ քաղաքում՝ հաճախորդների գերազանց սպասարկմամբ, լավագույն ուտեստներով և լավագույն գնով, այցելեք մեզ-->
-                        <!--Մենք երկար տարիներ մեր հաճախորդներին առաջարկում ենք գերազանց որակի ծառայություններ՝ գերազանց սպասարկմամբ, առողջարար ուտեստներով և լավագույն գնով:-->
                         Պատվիրեք ամենահամեղ տնական ուտեստները Gourmet Art-ից։ Մեր արտադրանքը պատրաստվում է տեղական բարձրորակ մթերքներով և ձեզ փոխանցվում թարմ (ոչ սառեցված) վիճակում։
                         Այն կարող եք պահել սառցարանում կիսաֆաբրիկատ տարբերակով` մինչև երեք ամիս։
                     </p>
@@ -189,8 +191,6 @@
                     </svg>
                     <h3 class="services__title"><!--Excellent food-->Գերազանց սնունդ</h3>
                     <p class="services__description">
-                        <!--We offer our clients excellent quality services for many years, with the best and delicious food in the city.-->
-                        <!--Մենք երկար տարիներ մեր հաճախորդներին առաջարկում ենք գերազանց որակի ծառայություններ՝ քաղաքի լավագույն և համեղ ուտեստներով:-->
                         Մենք երկար տարիներ մեր հաճախորդներին առաջարկում ենք միայն թարմ և առողջարար սնունդ։ Պատրաստում և մատուցում ենք ամենայն պատասխանատվությամբ։
                     </p>
                 </div>
@@ -199,8 +199,6 @@
                     <img class="services__img" src="https://img.icons8.com/ios/64/000000/medical-heart.png" style="filter: invert(40%) sepia(83%) saturate(430%) hue-rotate(99deg) brightness(100%) contrast(106%);"/>
                     <h3 class="services__title">Օգտակար սնունդ</h3>
                     <p class="services__description">
-                        <!--We offer our clients excellent quality services for many years, with the best and delicious food in the city.-->
-                        <!--Մենք երկար տարիներ մեր հաճախորդներին առաջարկում ենք գերազանց որակի ծառայություններ՝ քաղաքի լավագույն և համեղ ուտեստներով:-->
                         Թարմ, ամբողջական բաղադրիչներով պատրաստված տնական սնունդը թույլ է տալիս վերահսկել ձեր կերակուրներում ավելացված աղի և անառողջ ճարպերի քանակը, օգնելով ձեզ պահպանել առողջ սննդակարգ:
                     </p>
                 </div>
@@ -259,7 +257,6 @@
                     </svg>
                     <h3 class="services__title"><!--Delivery-->Առաքում</h3>
                     <p class="services__description">
-                        <!--We offer our clients excellent quality services for many years, with the best and delicious food in the city.-->
                         Մենք երկար տարիներ մեր հաճախորդներին առաջարկում ենք գերազանց որակի ծառայություններ՝ թարմ և համեղ ուտեստներով:
                     </p>
                 </div>
@@ -447,7 +444,6 @@
                     <span class="section-subtitle app__initial"><!--App-->Սոցցանցեր</span>
                     <h2 class="section-title app__initial"><!--App is aviable-->Հետևեք մեր<br> թարմացումներին</h2>
                     <p class="app__description">
-                        <!--Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>-->
                         Հետևեք մեզ՝ մեր Ինստագրամյան և ֆեյսբուքյան էջերում: Մենք շարունակում ենք ակտիվ մնալ և սիրով կպատասխանենք Ձեր բոլոր հարցերին:
                     </p>
                     <div class="app__stores">
@@ -481,9 +477,9 @@
             <div class="contact__container bd-grid">
                 <div class="contact__data">
                     <span class="section-subtitle contact__initial">Let's talk</span>
-                    <h2 class="section-title contact__initial"><!--Contact us-->Առաքում</h2>
-                    <p class="contact__description"><!--If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.-->
-                        Եթե ցանկանում եք պատվիրել, թողեք հաղորդագրություն կամ զանգահարեք մեր հեռախոսահամարին:<!-- և մենք արագ կպատասխանենք ձեզ՝ մեր 24/7 messenger-ի ծառայության միջոցով:-->
+                    <h2 class="section-title contact__initial"><!--Contact us | Հետ կապ-->Առաքում</h2>
+                    <p class="contact__description">
+                        Եթե ցանկանում եք պատվիրել, թողեք հաղորդագրություն կամ զանգահարեք մեր հեռախոսահամարին:
                     </p>
                 </div>
 

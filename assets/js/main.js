@@ -112,3 +112,22 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+/*==================== PRELOADER ====================*/
+document.body.onload = function() {
+
+    // setTimeout(function() {
+    //     var preloader = document.getElementById('page-preloader');
+    //     if( !preloader.classList.contains('done') )
+    //     {
+    //         preloader.classList.add('done');
+    //     }
+    // }, 1000);
+
+    var preloader = document.getElementById('page-preloader');
+    if( !preloader.classList.contains('done') )
+    {
+        preloader.classList.add('done');
+    }
+
+}
