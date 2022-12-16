@@ -114,20 +114,12 @@ sr.reveal(`.home__data, .home__img,
 })
 
 /*==================== PRELOADER ====================*/
-document.body.onload = function() {
+window.addEventListener("load", () => {
+    const loader =  document.querySelector(".loader");
 
-    // setTimeout(function() {
-    //     var preloader = document.getElementById('page-preloader');
-    //     if( !preloader.classList.contains('done') )
-    //     {
-    //         preloader.classList.add('done');
-    //     }
-    // }, 1000);
+    loader.classList.add("loader--hidden");
 
-    var preloader = document.getElementById('page-preloader');
-    if( !preloader.classList.contains('done') )
-    {
-        preloader.classList.add('done');
-    }
-
-}
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+    });
+});
